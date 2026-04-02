@@ -1,16 +1,43 @@
-# React + Vite
+# FinanceTrack Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive frontend finance dashboard built to evaluate UI/UX design, component structuring, and state management.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+* **Deployment Link:** [Insert your Vercel/Netlify link here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Overview
+This project is a React-based web application that allows users to track and visualize their financial activity. It features a clean interface, interactive charts, a transaction management system, and simulated Role-Based Access Control (RBAC).
 
-## React Compiler
+## ✨ Key Features
+* **Dashboard Summary:** Quick-glance cards for Total Balance, Total Income, and Total Expenses.
+* **Data Visualization:** * Interactive line chart for tracking the balance trend over time.
+  * Interactive pie chart for breaking down spending by category.
+* **Transaction Management:** * View a tabulated list of recent transactions.
+  * Search transactions by category.
+  * Filter transactions by type (Income/Expense).
+* **Role-Based Access Control (RBAC):**
+  * **Viewer Mode:** Can browse data and utilize filters/search.
+  * **Admin Mode:** Unlocks the ability to add new transactions and delete existing ones.
+* **Data Persistence:** Transactions are automatically saved to the browser's `localStorage`, ensuring data remains intact upon page refresh.
+* **Responsive Design:** Fully fluid layout that works seamlessly across desktop, tablet, and mobile devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+* **Framework:** React 18 (Bootstrapped with Vite for fast builds)
+* **Styling:** Tailwind CSS (For utility-first, responsive design)
+* **Charts:** Recharts (For SVG-based, accessible visualizations)
+* **Icons:** Lucide React
+* **State Management:** React Context API + LocalStorage
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
+The application follows a modular and scalable architecture:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/
+│   ├── layout/          # Structural components (Navbar)
+│   ├── dashboard/       # Dashboard widgets (SummaryCards, Charts)
+│   └── transactions/    # Transaction-specific UI (List, Filters, Forms)
+├── context/             # Global state management (FinanceContext)
+├── data/                # Initial mock data and type definitions
+├── App.jsx              # Main layout and Context Provider wrapper
+└── main.jsx             # React entry point
