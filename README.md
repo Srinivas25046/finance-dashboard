@@ -10,9 +10,9 @@ This project is a React-based web application that allows users to track and vis
 
 ## ✨ Key Features
 * **Dashboard Summary:** Quick-glance cards for Total Balance, Total Income, and Total Expenses.
-* **Data Visualization:** * Interactive line chart for tracking the balance trend over time.
+* **Data Visualization:** Interactive line chart for tracking the balance trend over time.
   * Interactive pie chart for breaking down spending by category.
-* **Transaction Management:** * View a tabulated list of recent transactions.
+* **Transaction Management:** View a tabulated list of recent transactions.
   * Search transactions by category.
   * Filter transactions by type (Income/Expense).
 * **Role-Based Access Control (RBAC):**
