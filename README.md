@@ -3,7 +3,7 @@
 A modern, responsive, and interactive frontend finance dashboard built to evaluate UI/UX design, component structuring, and state management.
 
 ## 🚀 Live Demo
-* **Deployment Link:** [Insert your Vercel/Netlify link here]
+* **Deployment Link:** [https://finance-dashboard-phi-lemon.vercel.app/]
 
 ## 📋 Overview
 This project is a React-based web application that allows users to track and visualize their financial activity. It features a clean interface, interactive charts, a transaction management system, and simulated Role-Based Access Control (RBAC).
